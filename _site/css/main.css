@@ -3,15 +3,15 @@ html {
   box-shadow: 0 0 0 30px #000 inset;
   padding: 0 30px;
 }
-a {
-  color: #f00;
+body {
+  font-family: helvetica, arial, sans-serif;
 }
 h1 {
   font-size:7vw;
   margin-top: 0;
 }
-body {
-  font-family: helvetica, arial, sans-serif;
+a {
+  color: #f00;
 }
 h2 ~ p {
   font-size: 0.8em;
@@ -108,10 +108,14 @@ h2 ~ p {
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
-  position:relative;
 }
 
 /* SOCIAL LINKS */
+.social-list {
+  list-style: none;
+  padding:0;
+  text-align: center;
+}
 .social-link {
   background: rgba(150, 150, 150, 0.5);
   border-radius: 99px;
@@ -133,13 +137,7 @@ h2 ~ p {
 .social-link:active {
   background-color:#ccc;
 }
-.social-list {
-  bottom: 0px;
-  list-style: none;
-  padding:0;
-  position: absolute;
-  text-align: right;
-}
+
 .social-list > li {
   display: inline-block;
   margin: 0 0.5em;
@@ -176,7 +174,6 @@ h2 ~ p {
 }
 .bio-copy {
   font-size: 1em;
-  line-height: 1.5;
 }
 .bio-copy a {
   color: green;
